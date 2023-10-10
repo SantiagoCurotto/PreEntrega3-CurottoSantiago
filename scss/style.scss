@@ -14,67 +14,67 @@ body{
 }
 
 h1{
-    font-size: 2.5rem;
-    color: #ffff
+    font-size: 40px;
+    
 }
 h2{
-    font-size: 2rem;
+    font-size: 32px;
     text-transform: uppercase;
     font-weight: 400;
 }
 h4{
-    font-size: 1.5rem;
+    font-size: 24px;
     font-weight: 500;
 }
 p{
-    font-size: 1rem;
-    margin: .625rem;
+    font-size: 16px;
+    margin: 10px;
     line-height: 1.7em;
-    color: #ffff;
+    
 }
 a{
     text-decoration: none;
 }
 .container{
     margin: auto;
-    max-width: 81.25rem;
-    padding: 0 20px;
+    max-width: 1300px;
+    padding: 0 1.25rem;
 }
 .parrafo{
-    font-size: 10px;
+    font-size: .625rem;
 }
 .portada{
-    font-size: 6rem;
+    font-size: 96px;
 }
 .boton{
     display: inline-block;
-    font-size: .9375rem;
-    padding: 12px 23px;
+    font-size: 15px;
+    padding: .75rem 1.4375rem;
     cursor: pointer;
     font-weight: bold;
-    letter-spacing: 1px;
-    border-radius: 4px;
+    letter-spacing: .0625rem;
+    border-radius: .25rem;
     &-color{
         background-color: $color-secundario;
         color: #ffff;
-        border: 1px solid $color-secundario;
+        border: .0625rem solid $color-secundario;
     }
 }
 form{
     label{
         display: inline-block;
-        margin-bottom: 6px;
+        margin-bottom: .375rem;
     }
     .form-group{
-        margin-bottom: 16px;
+        margin-bottom: 1rem;
         &-control{
             width: 100%;
-            padding: 7px 12px;
-            font-size: 1rem;
+            padding: .4375rem .75rem;
+            font-size: 16px;
             line-height: 1.5;
-            background: $color-tercer;
+            background: rgba(128, 128, 128, 0.507);
             border: none;
-            border-radius: 4px;
+            border-radius: .25rem;
         }
     }
 button{
@@ -86,15 +86,15 @@ button{
     background: $color-primario;
     color: #ffff;
     overflow: auto;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
     a{
         color: #ffff;
     }
     .logo{
         float: left;
-        padding-top: 16px;
-        font-size: 25px;
+        padding-top: 1rem;
+        font-size: 1.5625rem;
     }
     ul{
         list-style: none;
@@ -104,7 +104,7 @@ button{
         }
         li a{
             display: block;
-            padding: 20px;
+            padding: 1.25rem;
             text-align: center;
         }
     }
@@ -112,8 +112,8 @@ button{
 
 .portada{
     height: 88vh;
-    padding: 120px 0;
-    background: url('https://images.unsplash.com/photo-1581094374631-2154f20c2726?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
+    padding: 7.5rem 0;
+    background: url('https://images.unsplash.com/photo-1581094376368-ae9f64e15985?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
@@ -122,6 +122,71 @@ button{
     }
     p{
         width: 50%;
-        padding: 15px;
+        padding: .9375rem;
+    }
+}
+
+.nosotros{
+    padding: 6.25rem;
+    h2{
+        text-align: center;
+        padding-bottom: 50px;
+    }
+    img{
+        width: 100%;
+    }
+    .nos-flex{
+        display: flex;
+        &-img{
+            flex: 1;
+        }
+        &-des{
+            flex: 1;
+            padding: 20px 40px;
+        }
+    }
+}
+.servicios{
+    padding: 100px 0px;
+    background: $color-tercer;
+    h2{
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    p.parrafo{
+        text-align: center;
+        padding-bottom: 50px;
+    }
+    .servicios-flex{
+        display: flex;
+        gap: .625rem;
+        img{
+            height: 40px;
+        }
+        &-box{
+            background: #ffff;
+            padding: 50px 20px;
+            text-align: center;
+            border-radius: 20px;
+            h4{
+                padding: 10px 0px;
+            }
+        }
+    }
+}
+.contactanos{
+    padding: 100px 0px;
+    h2{
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    p.parrafo{
+        text-align: center;
+        padding-bottom: 50px;
+        
+    }
+    form{
+        width: 50%;
+        margin: 0 auto;
     }
 }
