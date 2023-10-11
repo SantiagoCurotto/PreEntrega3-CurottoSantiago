@@ -195,3 +195,243 @@ button{
     height: 200px;
     background: gray;
 }
+@import url('https://fonts.googleapis.com/css2?family=VT323&family=Young+Serif&display=swap');
+
+$fuente: 'Young Serif', sans-serif;
+$color-primario: #040D12;
+$color-secundario: #183D3D;
+$color-tercer: #f9f9f93f;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: $fuente;
+    font-size: 16px;
+}
+
+
+
+@media screen and (max-width: 525px) {
+    .navBar {
+        height: auto;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+
+        .logo {
+            font-size: 1.25em;
+            padding-top: 0.25rem;
+        }
+
+        ul {
+            text-align: center;
+
+            li {
+                display: block;
+                margin: 0;
+                padding: 0.5rem;
+            }
+        }
+    }
+
+    .portada {
+        height: auto;
+        padding: 2rem 0;
+
+        h1,
+        p {
+            width: 100%;
+        }
+    }
+
+    .nosotros,
+    .servicios,
+    .contactanos {
+        padding: 1rem;
+
+        h2,
+        p.parrafo {
+            text-align: center;
+            padding-bottom: 1rem;
+        }
+
+        form {
+            width: 100%;
+        }
+    }
+}
+@import url('https://fonts.googleapis.com/css2?family=VT323&family=Young+Serif&display=swap');
+
+$fuente: 'Young Serif', sans-serif;
+$color-primario: #040D12;
+$color-secundario: #183D3D;
+$color-tercer: #f9f9f93f;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: $fuente;
+    font-size: 16px;
+}
+
+
+
+@media screen and (max-width: 1000px) {
+    .navBar {
+        ul {
+            display: none;
+            text-align: center;
+            width: 100%;
+
+            li {
+                display: block;
+                margin: 0;
+                padding: 0.5rem;
+            }
+        }
+
+        .logo {
+            font-size: 1.25em;
+            padding-top: 0.25rem;
+        }
+    }
+
+    .portada {
+        padding: 2rem 0;
+
+        h1,
+        p {
+            width: 100%;
+        }
+    }
+
+    .nosotros,
+    .servicios,
+    .contactanos {
+        padding: 1rem;
+
+        h2,
+        p.parrafo {
+            text-align: center;
+            padding-bottom: 1rem;
+        }
+
+        form {
+            width: 100%;
+        }
+    }
+}
+@media screen and (max-width: 300px) {
+    .navBar {
+        ul {
+            display: block;
+            text-align: center;
+            width: 100%;
+
+            li {
+                display: block;
+                margin: 0;
+                padding: 0.5rem;
+            }
+        }
+
+        .logo {
+            font-size: 1em;
+            padding-top: 0.25rem;
+        }
+    }
+
+    .portada {
+        padding: 1rem 0;
+
+        h1,
+        p {
+            width: 100%;
+        }
+    }
+
+    .nosotros,
+    .servicios,
+    .contactanos {
+        padding: 1rem;
+
+        h2,
+        p.parrafo {
+            text-align: center;
+            padding-bottom: 1rem;
+        }
+
+        form {
+            width: 100%;
+        }
+    }
+}
+.servicios {
+    padding: 2rem 0;
+    background: $color-tercer;
+
+    h2 {
+        text-align: center;
+        padding-bottom: 0.625rem;
+    }
+
+    p.parrafo {
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+    .servicios-flex {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.625rem;
+
+        img {
+            height: 30px; 
+
+        &-box {
+            flex: 1 1 calc(33.333% - 1.25rem);
+            background: #fff;
+            padding: 1.25rem;
+            text-align: center;
+            border-radius: 0.3125rem;
+            box-sizing: border-box;
+
+            h4 {
+                padding: 0.625rem 0;
+            }
+        }
+    }
+
+    @media screen and (max-width: 700px) {
+        .servicios-flex {
+            flex-direction: column;
+
+            .servicios-box {
+                width: 100%;
+            }
+        }
+    }
+}
+}
+@media screen and (max-width: 700px) {
+    .nos-flex {
+        flex-direction: column;
+        align-items: center;
+
+        &-img {
+            width: 100%;
+        }
+
+        &-des {
+            padding: 1rem;
+            width: 100%;
+        }
+    }
+}
